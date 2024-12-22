@@ -17,7 +17,7 @@ st.write("Unggah gambar untuk mendapatkan deskripsi otomatis.")
 uploaded_file = st.file_uploader("Pilih gambar", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
-    st.image(uploaded_file, caption="Gambar yang diunggah", use_column_width=True)
+    st.image(uploaded_file, caption="Gambar yang diunggah", use_container_width=True)
     st.write("Menganalisis...")
 
     # Membaca file gambar
